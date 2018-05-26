@@ -1,5 +1,5 @@
-# ACF FIELD_LABEL Field
+# ACF China cities select Field
 
-Welcome to the Advanced Custom Fields FIELD_LABEL repository on Github.
+Welcome to the Advanced Custom Fields Chana cities select repository on Github.
 
-EXTENDED_DESCRIPTION
+I help you chose Chinese cities from admin page easier.   
