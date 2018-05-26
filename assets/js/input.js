@@ -33,8 +33,11 @@
 		*  @return	n/a
 		*/
 		
-		acf.add_action('ready_field/type=FIELD_NAME', initialize_field);
-		acf.add_action('append_field/type=FIELD_NAME', initialize_field);
+		acf.add_action('ready_field/type=china_cities_select', initialize_field);
+		acf.add_action('append_field/type=china_cities_select', initialize_field);
+
+    $('.chosen-select').chosen();
+    console.log($('.chosen-select').chosen());
 		
 		
 	} else {
@@ -52,10 +55,11 @@
 		$(document).on('acf/setup_fields', function(e, postbox){
 			
 			// find all relevant fields
-			$(postbox).find('.field[data-field_type="FIELD_NAME"]').each(function(){
+			$(postbox).find('.field[data-field_type="china_cities_select"]').each(function(){
 				
 				// initialize
 				initialize_field( $(this) );
+        $(this).find('select').chosen()
 				
 			});
 		
